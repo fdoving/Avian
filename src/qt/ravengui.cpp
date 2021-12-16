@@ -709,7 +709,7 @@ void RavenGUI::createToolBars()
         labelCurrentPrice->setContentsMargins(25,0,0,0);
         labelCurrentPrice->setFixedHeight(75);
         labelCurrentPrice->setAlignment(Qt::AlignVCenter);
-        labelCurrentPrice->setStyleSheet(currentPriceStyleSheet.arg(COLOR_LABELS.name()));
+        labelCurrentPrice->setStyleSheet(currentPriceStyleSheet.arg(COLOR_BLACK.name()));
         labelCurrentPrice->setFont(currentMarketFont);
 
         QLabel* labelBtcRvn = new QLabel();
@@ -766,7 +766,6 @@ void RavenGUI::createToolBars()
 
                     labelCurrentPrice->setText(QString("%1").arg(QString().setNum(num, 'f', 8)));
 			        labelCurrentPrice->setToolTip(tr("Brought to you by exbitron.com"));
-                    labelCurrentPrice->setStyleSheet(currentPriceStyleSheet.arg(COLOR_PRICING_WIDGET.name()));
 
             //         // Create regex expression to find the value with 8 decimals
 		    // QRegExp rx("0\\.0\\d\\d\\d\\d");
